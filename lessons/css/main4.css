@@ -1,0 +1,46 @@
+:root{
+    --main-color:tomato;
+    --text-color:#fff;
+
+}
+.box{
+    width: 500px;
+    height: 200px;
+    background: var(--main-color);
+    margin:10px;
+    position: relative;
+    transition-property: width;
+    transition-duration: 1s;
+    transition: width 1s;
+}
+.box:hover{
+    width: 200px;
+    background: lightcoral;
+}
+.a{
+    background: linear-gradient(to bottom, green 60%,yellow);
+}
+.b{
+    background: radial-gradient(red,black);
+}
+.c{
+    background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* Transitions */
+.box1{
+    background-color: #333;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: boxname;
+    animation-duration: 4s;
+}
+@keyframes boxname{
+    /*condition*/
+    0%{background-color: #333; top: 0; left: 0;}
+    25%{background-color: greenyellow; top: 0; left: 300px;}
+    75%{background-color: blue; top: 300; left: 300px;}
+    100%{background-color: red; top: 0; left: 0;}
+}

@@ -1,0 +1,39 @@
+/* This is a comment */
+/* Author - Levi Starkweather 
+    version - 1.0
+*/
+/* style rule - selector, declaration */
+/* selector {propertyname:calue;}*/
+
+:root{
+    --main-color:red;
+    --bg-color: lightblue;
+
+}
+body{
+    font-family: 'Libre Barcode 39', cursive;
+    background-color: var(--bg-color)
+}
+p{
+    color: green;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-style: 18px; 
+}
+
+h2{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    color: brown;
+    font-style: italic;
+    box-shadow: var(--main-color)
+    
+}
+footer i{
+    font-style: italic;
+}
+h3{
+    color: cyan !important; /*sets the priority*/
+}
